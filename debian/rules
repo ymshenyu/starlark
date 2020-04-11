@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+
+# File required in tests
+export DH_GOLANG_INSTALL_EXTRA := starlarktest/assert.star
+# We want to build only the library packages themselves, not the accompanying
+# binaries.
+export DH_GOLANG_EXCLUDES := cmd/
+
+
 %:
 	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
