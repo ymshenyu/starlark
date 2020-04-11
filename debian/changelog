@@ -1,0 +1,5 @@
+golang-go.starlark (0.0~git20200330.be5394c-1) focal; urgency=medium
+
+  * Initial release
+
+ -- Guobang Bi <ymshenyu@gmail.com>  Sat, 11 Apr 2020 12:25:29 +0800
